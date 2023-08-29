@@ -3468,9 +3468,6 @@ GameObject:
   m_Component:
   - component: {fileID: 122037011}
   - component: {fileID: 122037010}
-  - component: {fileID: 122037012}
-  - component: {fileID: 122037013}
-  - component: {fileID: 122037014}
   m_Layer: 0
   m_Name: ItemGenerator
   m_TagString: Untagged
@@ -3510,67 +3507,6 @@ Transform:
   m_Father: {fileID: 1240875136}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &122037012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122037009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfbc5bd6948cc3e439159b9f9db877d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemsToCollect: 5
---- !u!65 &122037013
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122037009}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 9.312059, y: 7.473531, z: 2.828936}
-  m_Center: {x: 0.5481472, y: 3.2367654, z: 0.09998971}
---- !u!54 &122037014
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122037009}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &129986322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12811,6 +12747,7 @@ GameObject:
   - component: {fileID: 1640325168}
   - component: {fileID: 1640325167}
   - component: {fileID: 1640325166}
+  - component: {fileID: 1640325171}
   m_Layer: 0
   m_Name: PlayerMain
   m_TagString: Untagged
@@ -12915,6 +12852,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1640325171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640325165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfbc5bd6948cc3e439159b9f9db877d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemsToCollect: 1
 --- !u!1001 &1654507620
 PrefabInstance:
   m_ObjectHideFlags: 0

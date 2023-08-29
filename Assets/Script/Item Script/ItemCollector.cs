@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ItemCollector : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class ItemCollector : MonoBehaviour
 
                 if (collectedItems >= itemsToCollect)
                 {
+                    SceneManager.LoadScene("Game Clear");
                     // ここにクリア時の処理を記述
                     Debug.Log("Clear!"); // クリア時のメッセージを表示
                 }
